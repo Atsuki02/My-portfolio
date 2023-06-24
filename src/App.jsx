@@ -1,37 +1,21 @@
-// import { RouterProvider, createBrowserRouter } from "react-router-dom";
-// import Top from "./Top";
-// import Works from "./Works";
-// import About from "./About";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Top />,
-//   },
-//   {
-//     path: "/works",
-//     element: <Works />,
-//   },
-//   { path: "/about", element: <About /> },
-// ]);
-
-// function App() {
-//   return <RouterProvider router={router} />;
-// }
-
-// export default App;
-
+import {
+  RouterProvider,
+  createBrowserRouter,
+  useLocation,
+} from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
-import Top from "./Top.jsx";
-import About from "./About.jsx";
-import Works from "./Works.jsx";
+import Top from "./Top";
+import Works from "./Works";
+import About from "./About";
 import PreLoader from "./preLoader.jsx";
-import NavMenu from "./NavMenu.jsx";
+import AppLayout from "./AppLayout";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  // const location = useLocation();
 
   useEffect(() => {
     setIsLoading(true);
@@ -40,23 +24,26 @@ function App() {
     }, 3000);
   }, []);
 
-  return (
-    <>
-      {isLoading ? (
-        <PreLoader isLoading={isLoading} />
-      ) : (
-        <>
-          {isOpenMenu ? (
-            <NavMenu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
-          ) : null}
-          <Top isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
-          <About />
-          <Works />
-        </>
-      )}
-    </>
-  );
-  // return <PreLoader />;
+  const router = createBrowserRouter([
+    {
+      element: (
+        <AppLayout isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Top />,
+        },
+        { path: "/about", element: <About /> },
+        {
+          path: "/works",
+          element: <Works />,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

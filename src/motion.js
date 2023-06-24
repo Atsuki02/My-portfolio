@@ -1,3 +1,5 @@
+import { easeInOut } from "framer-motion";
+
 export const headerVariants = (delay) => ({
   hidden: {
     opacity: 0,
@@ -178,3 +180,65 @@ export const slideOut = (direction, type, delay, duration) => ({
     },
   },
 });
+
+export const navMenuVariants = {
+  hidden: {
+    opacity: 0,
+    x: 250,
+    transition: {
+      type: "tween",
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "tween",
+      duration: 0.8,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const navMenuSelectVariants = {
+  hidden: {
+    opacity: 0,
+  },
+};
+
+export const navIconVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      type: "tween",
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 0.8,
+
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+export const sentetnceVariants = {
+  hidden: {
+    opacity: [0],
+  },
+  show: {
+    opacity: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+
+    transition: {
+      type: "tween",
+      duration: 0.4,
+      staggerChildren: 0.2,
+    },
+  },
+};

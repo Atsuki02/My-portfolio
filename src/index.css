@@ -7,6 +7,8 @@
     @apply rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3;
   }
 
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Tilt+Prism&display=swap");
+
   /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
   .loader {
     width: 45px;
@@ -57,4 +59,26 @@
       border-radius: 30% 70% 60% 40% / 30% 40% 60% 70%;
     }
   }
+}
+
+.flowing {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: flowing-anim 2s forwards linear;
+}
+
+@keyframes flowing-anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.clip {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
