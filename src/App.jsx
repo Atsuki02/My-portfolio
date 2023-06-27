@@ -7,6 +7,7 @@ import AppLayout from "./AppLayout";
 
 function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Top />,
+          element: <Top isLoading={isLoading} setIsLoading={setIsLoading} />,
         },
         { path: "/about", element: <About /> },
         {

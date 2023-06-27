@@ -1,5 +1,3 @@
-import { easeInOut } from "framer-motion";
-
 export const headerVariants = (delay) => ({
   hidden: {
     opacity: 0,

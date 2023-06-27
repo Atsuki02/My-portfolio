@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { sentetnceVariants } from "./motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { FaAngleDown } from "react-icons/fa";
+import {
+  FaAngleDown,
+  FaEnvelope,
+  FaLinkedin,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { skills } from "./Portfolio";
 import icon1 from "./images/icon1.png";
 import icon2 from "./images/icon2.png";
@@ -29,7 +34,7 @@ function About() {
   const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10, icon11, icon12, icon13, icon14, icon15, icon16];
 
   return (
-    <div id="about" className="font-about text-black ">
+    <div id="about" className="font-about text-black">
       <section className="flex h-screen w-full flex-col items-center justify-start bg-white p-8 text-center text-black">
         <div className="flex h-screen flex-col items-center justify-center text-center text-xl">
           <motion.h1
@@ -83,7 +88,7 @@ function About() {
       </section>
       <section
         id="aboutMe"
-        className="jusify-between mt-20 flex w-full flex-col bg-orange-500 p-8  text-white lg:p-20"
+        className="jusify-between my-16 flex w-full flex-col bg-orange-500 p-8  text-white lg:p-20"
       >
         <div>
           <h1 className="mb-4 text-center text-xl font-extrabold italic tracking-wider lg:mb-12 lg:text-7xl">
@@ -122,17 +127,57 @@ function About() {
           </div>
           <ul className="col-auto gap-3 py-10 text-center text-base leading-normal  lg:gap-14 lg:rounded-3xl lg:bg-orange-100 lg:p-10 lg:text-xl">
             {skills.map((skill, i) => (
-              <li className="flex flex-col items-center justify-center rounded-2xl bg-orange-100 p-3 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:bg-white">
-                <img
-                  src={icons[i]}
-                  alt=""
-                  className="h-8 w-8 object-contain "
-                />
+              <li
+                key={i}
+                className="flex flex-col items-center justify-center rounded-2xl bg-orange-100 p-3 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:bg-white"
+              >
+                <img src={icons[i]} alt="" className="h-8 w-8 object-contain" />
                 <p className="pt-2 text-xs font-medium">{skill.language}</p>
               </li>
             ))}
           </ul>
         </div>
+        <div className="relative py-12 lg:py-14">
+          <div className="relative block pb-2 pl-20 text-[10px] uppercase tracking-widest before:absolute before:left-0 before:top-2  before:h-[1px] before:w-12 before:bg-black lg:before:top-3">
+            Say hello
+          </div>
+          <div className="text-left text-lg font-medium uppercase tracking-widest lg:pb-16 lg:text-3xl">
+            Contact
+          </div>
+          <div className="lg:rounded-3xl lg:bg-orange-100 lg:p-10 lg:text-xl">
+            <h1 className="p-10 text-center text-xl font-medium lg:text-left lg:text-3xl lg:font-semibold">
+              Get in touch
+            </h1>
+            <div className="block items-center justify-around space-y-6 lg:flex lg:space-y-0 ">
+              <div className="flex  flex-col items-center  justify-center rounded-3xl bg-orange-100 p-14 lg:min-h-[280px] lg:min-w-[420px] lg:bg-white">
+                <div className="mb-6 rounded-2xl bg-green-200 p-4 text-4xl ">
+                  <FaEnvelope />
+                </div>
+                <p className="pb-4 underline decoration-black hover:text-orange-400 hover:decoration-orange-400">
+                  <a href="mailto:canvanvam@gmail.com">canvanvam@gmail.com</a>
+                </p>
+                <p className="hover:text-orange-400">
+                  <a href="mailto:canvanvam@gmail.com">Email Me</a>
+                </p>
+              </div>
+              <div className=" flex flex-col items-center justify-center rounded-3xl bg-orange-100 p-14 lg:min-h-[280px] lg:min-w-[400px] lg:bg-white">
+                <div className="mb-6 rounded-2xl bg-blue-200 p-4 text-4xl ">
+                  <FaLinkedinIn />
+                </div>
+                <p className="hover:text-orange-400">
+                  <a href="https://www.linkedin.com/in/atsuki-kitada-242573271/">
+                    Messege me
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex h-14 items-center justify-center bg-orange-400 lg:h-20">
+        <p className="text-sm text-white lg:text-lg lg:tracking-wider">
+          <small>©2023- ATSUKI KITADA</small>
+        </p>
       </section>
     </div>
   );

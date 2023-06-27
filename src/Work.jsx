@@ -56,8 +56,8 @@ function Work() {
           </div>
         </AnchorLink>
       </section>
-      <section id="portfolio" className="">
-        {portfolioItems.map((item) => {
+      <section id="portfolio">
+        {portfolioItems.map((item, i) => {
           return (
             <PortfolioItem
               key={item.title}
@@ -66,6 +66,13 @@ function Work() {
               description={item.description}
               img={item.img}
               technologies={item.technologies}
+              bgColor1={item.bgColor1}
+              bgColor2={item.bgColor2}
+              borderColor1={item.borderColor1}
+              textColor1={item.textColor1}
+              buttonBgColor={item.buttonBgColor}
+              borderColor2={item.borderColor2}
+              bgColor3={item.bgColor3}
             />
           );
         })}

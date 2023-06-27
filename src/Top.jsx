@@ -1,27 +1,24 @@
 import { motion } from "framer-motion";
 import { sentetnceVariants } from "./motion";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import PreLoader from "./preLoader.jsx";
 
 const line1 = "AM";
 const line2 = "ATSUKI";
 
-function Top() {
-  const [isLoading, setIsLoading] = useState(false);
-
+function Top({ isLoading, setIsLoading }) {
   useEffect(() => {
-    setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
-  }, []);
+  }, [setIsLoading]);
 
   return (
     <>
       {isLoading ? (
         <PreLoader />
       ) : (
-        <section className="flex h-screen flex-col items-center justify-center p-16 text-center  text-xl">
+        <section className="flex h-screen flex-col items-center justify-center p-16 text-center text-xl">
           <motion.h1
             variants={sentetnceVariants}
             initial="hidden"
