@@ -2,7 +2,7 @@ function NavButton({ isOpenMenu, setIsOpenMenu }) {
   return (
     <>
       <div
-        className="fixed right-0 z-20 m-4 flex h-10 w-10 cursor-pointer flex-col items-center justify-center space-y-1 rounded-[50%] bg-orange-500 text-right text-white sm:m-6 sm:h-16 sm:w-16 sm:space-y-2"
+        className="fixed right-0 z-30 m-3 flex h-10 w-10 cursor-pointer flex-col items-center justify-center space-y-1 rounded-[50%] bg-orange-500 text-right text-white sm:m-4 sm:h-16 sm:w-16 sm:space-y-2"
         onClick={() => setIsOpenMenu(!isOpenMenu)}
       >
         <div
