@@ -48,7 +48,7 @@ export const navMenuSelectVariants = {
 export const navIconVariants = {
   hidden: {
     opacity: 0,
-    y: 100,
+    y: 50,
     transition: {
       type: "tween",
       damping: 140,
