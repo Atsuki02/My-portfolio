@@ -69,7 +69,7 @@ function About() {
                 className="flex flex-col items-center justify-center rounded-2xl bg-white p-3 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:bg-white"
               >
                 <img
-                  src={skill.icon}
+                  src={`${skill.icon}`}
                   alt={skill}
                   className="h-8 w-8 object-contain"
                 />
