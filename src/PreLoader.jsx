@@ -9,7 +9,7 @@ function PreLoader() {
   useEffect(() => {
     const animation = animate(count, 100, { duration: 2 });
     return animation.stop;
-  }, []);
+  }, [count]);
 
   return (
     <div className="relative z-30 h-screen w-screen bg-slate-700 bg-gradient-to-r font-[sans]">
