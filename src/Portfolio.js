@@ -19,7 +19,7 @@ export const contacts = [
 export const skills = [
   {
     language: "HTML",
-    icon: "../src/images/icon1.png",
+    icon: "..src/images/icon1.png",
   },
   {
     language: "CSS",
