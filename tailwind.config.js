@@ -12,6 +12,7 @@ export default {
         fontFamily: {
           main: ["Playfair Display", "sans-serif"],
           description: ["Domine", "sans-serif"],
+          firstView: ["Tilt Prism", "sans-serif"],
         },
       },
       fontSize: {

@@ -33,7 +33,7 @@ function PortfolioItem({
           viewport={{ once: true }}
           className={`absolute z-10 flex flex-col items-start justify-center  px-8 py-6 lg:-left-20 lg:min-h-[400px] lg:w-1/2 lg:min-w-[430px] lg:max-w-[350px] lg:border-4 ${borderColor1} lg:bg-slate-100 lg:shadow-2xl`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center font-[sans]">
             <span className="block h-0.5 w-7 bg-slate-800"></span>
             <p className="p-2 text-lg lg:p-3 lg:text-xl">{index}</p>
           </div>

@@ -12,7 +12,7 @@ function PreLoader() {
   }, []);
 
   return (
-    <div className="relative z-30 h-screen w-screen bg-slate-700 bg-gradient-to-r">
+    <div className="relative z-30 h-screen w-screen bg-slate-700 bg-gradient-to-r font-[sans]">
       <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center">
         <ClockLoader color={"#f97316"} size={100} />
         <div className="flex justify-center pt-12 text-4xl font-bold tracking-widest text-slate-100">
