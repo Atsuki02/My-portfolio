@@ -5,6 +5,7 @@ import Top from "./Top";
 import About from "./About";
 import Work from "./Work";
 import Error from "./Error";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
