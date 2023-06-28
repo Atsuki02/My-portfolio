@@ -70,7 +70,7 @@ function About() {
               >
                 <img
                   src={skill.icon}
-                  alt=""
+                  alt={skill}
                   className="h-8 w-8 object-contain"
                 />
                 <p className="pt-2 text-xs font-medium">{skill.language}</p>
