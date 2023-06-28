@@ -10,10 +10,8 @@ export default {
     extend: {
       theme: {
         fontFamily: {
-          tiltPrism: "Tilt Prism",
           main: ["Playfair Display", "sans-serif"],
-          title: ["Avenirnextltpro", "sans-serif"],
-          about: ["Poppins", "sans-serif"],
+          description: ["Domine", "sans-serif"],
         },
       },
       fontSize: {

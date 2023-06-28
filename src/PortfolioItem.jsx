@@ -55,7 +55,7 @@ function PortfolioItem({
               </Fragment>
             ))}
           </p>
-          <p className="text-xs tracking-tighter text-slate-700 lg:text-lg">
+          <p className="font-[description] text-xs tracking-tighter text-slate-700 lg:text-lg">
             {description}
           </p>
           <button

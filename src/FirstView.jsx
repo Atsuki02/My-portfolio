@@ -7,7 +7,7 @@ function FirstView({ line1, line2, line3 }) {
       variants={sentetnceVariants}
       initial="hidden"
       animate="show"
-      className="text-left text-5xl font-extrabold tracking-widest text-black drop-shadow-xl  sm:text-9xl"
+      className="text-left font-[sans] text-5xl font-extrabold tracking-widest text-black drop-shadow-xl  sm:text-9xl"
     >
       {line1.split("").map((char, i) => {
         return (
