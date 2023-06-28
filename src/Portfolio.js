@@ -19,67 +19,67 @@ export const contacts = [
 export const skills = [
   {
     language: "HTML",
-    icon: "src/images/icon1.png",
+    icon: "../src/images/icon1.png",
   },
   {
     language: "CSS",
-    icon: "src/images/icon2.png",
+    icon: "../src/images/icon2.png",
   },
   {
     language: "SASS",
-    icon: "src/images/icon3.png",
+    icon: "../src/images/icon3.png",
   },
   {
     language: "Javascript",
-    icon: "src/images/icon4.png",
+    icon: "../src/images/icon4.png",
   },
   {
     language: "Typescript",
-    icon: "src/images/icon5.png",
+    icon: "../src/images/icon5.png",
   },
   {
     language: "React",
-    icon: "src/images/icon6.png",
+    icon: "../src/images/icon6.png",
   },
   {
     language: "Next.js",
-    icon: "src/images/icon7.png",
+    icon: "../src/images/icon7.png",
   },
   {
     language: "Node.js",
-    icon: "src/images/icon8.png",
+    icon: "../src/images/icon8.png",
   },
   {
     language: "Tailwindcss",
-    icon: "src/images/icon9.png",
+    icon: "../src/images/icon9.png",
   },
   {
     language: "Bootstrap",
-    icon: "src/images/icon10.png",
+    icon: "../src/images/icon10.png",
   },
   {
     language: "Git",
-    icon: "src/images/icon11.png",
+    icon: "../src/images/icon11.png",
   },
   {
     language: "Framer",
-    icon: "src/images/icon12.png",
+    icon: "../src/images/icon12.png",
   },
   {
     language: "VS code",
-    icon: "src/images/icon13.png",
+    icon: "../src/images/icon13.png",
   },
   {
     language: "Firebase",
-    icon: "src/images/icon14.png",
+    icon: "../src/images/icon14.png",
   },
   {
     language: "Figma",
-    icon: "src/images/icon15.png",
+    icon: "../src/images/icon15.png",
   },
   {
     language: "Canva",
-    icon: "src/images/icon16.png",
+    icon: "../src/images/icon16.png",
   },
 ];
 
