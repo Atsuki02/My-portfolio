@@ -1,113 +1,49 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { sentetnceVariants } from "./motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import {
-  FaAngleDown,
-  FaEnvelope,
-  FaLinkedin,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { slideInVariants } from "./motion";
+import { FaEnvelope, FaLinkedinIn } from "react-icons/fa";
 import { skills } from "./Portfolio";
-import icon1 from "./images/icon1.png";
-import icon2 from "./images/icon2.png";
-import icon3 from "./images/icon3.png";
-import icon4 from "./images/icon4.png";
-import icon5 from "./images/icon5.png";
-import icon6 from "./images/icon6.png";
-import icon7 from "./images/icon7.png";
-import icon8 from "./images/icon8.png";
-import icon9 from "./images/icon9.png";
-import icon10 from "./images/icon10.png";
-import icon11 from "./images/icon11.png";
-import icon12 from "./images/icon12.png";
-import icon13 from "./images/icon13.png";
-import icon14 from "./images/icon14.png";
-import icon15 from "./images/icon15.png";
-import icon16 from "./images/icon16.png";
+import Title from "./Title";
+import Footer from "./Footer";
+import ScrollIcon from "./ScrollIcon";
+import FirstView from "./FirstView";
 
 function About() {
-  const line1 = "WHO";
-  const line2 = "AM";
-
-  // prettier-ignore
-  const icons = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10, icon11, icon12, icon13, icon14, icon15, icon16];
-
   return (
-    <div id="about" className="font-about text-black">
+    <div id="about" className="text-black">
       <section className="flex h-screen w-full flex-col items-center justify-start bg-white p-8 text-center text-black">
         <div className="flex h-screen flex-col items-center justify-center text-center text-xl">
-          <motion.h1
-            variants={sentetnceVariants}
-            initial="hidden"
-            animate="show"
-            className="text-left text-4xl font-extrabold tracking-widest text-black drop-shadow-xl  lg:text-9xl"
-          >
-            {line1.split("").map((char, i) => {
-              return (
-                <motion.span
-                  key={i}
-                  variants={sentetnceVariants}
-                  className="clip mb-8 bg-gradient-to-r from-gray-700 via-gray-900 to-black text-center "
-                >
-                  {char}
-                </motion.span>
-              );
-            })}
-            <br />
-            {line2.split("").map((char, i) => {
-              return (
-                <motion.span
-                  key={i}
-                  variants={sentetnceVariants}
-                  className="clip bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-700 via-orange-300 to-rose-800"
-                >
-                  {char}
-                </motion.span>
-              );
-            })}
-            <motion.p
-              variants={sentetnceVariants}
-              className="clip mb-8 bg-gradient-to-r from-gray-700 via-gray-900 to-black "
-            >
-              I
-            </motion.p>
-          </motion.h1>
+          <FirstView line1="WHO" line2="AM" line3="I" />
         </div>
-        <AnchorLink href="#aboutMe">
-          <div className="relative flex flex-col items-center justify-center ">
-            <span className="relative h-10 w-10 rounded-[50%] bg-orange-400 lg:h-16 lg:w-16 ">
-              <span className="absolute left-1 top-1 h-8 w-8 rounded-[50%] border-white bg-white lg:h-14 lg:w-14 "></span>
-            </span>
-            <FaAngleDown
-              href="#portfolio"
-              className="absolute text-xl text-orange-400"
-            />
-          </div>
-        </AnchorLink>
+        <ScrollIcon scrollTo="#aboutMe" />
       </section>
-      <section
+      <motion.section
+        variants={slideInVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
         id="aboutMe"
-        className="jusify-between my-16 flex w-full flex-col bg-orange-500 p-8  text-white lg:p-20"
+        className="jusify-between mt-16 flex w-full flex-col bg-slate-500 p-8 text-white lg:p-20"
       >
         <div>
-          <h1 className="mb-4 text-center text-xl font-extrabold italic tracking-wider lg:mb-12 lg:text-7xl">
+          <h1 className="font-test mb-4 text-center text-xl font-extrabold italic tracking-wider lg:mb-12 lg:text-7xl">
             ATSUKI KITADA
           </h1>
           <p className="text-center text-xs font-extrabold italic lg:text-xl ">
             Bron in Japan, currently live in Vancouver, Canada
           </p>
         </div>
-      </section>
-      <section className="w-full px-4 py-12 text-sm lg:px-14 lg:py-14 lg:text-lg">
-        <div className="relative">
-          <span className="relative block pb-2 pl-20 text-[10px] uppercase tracking-widest before:absolute before:left-0 before:top-2 before:h-[1px] before:w-12 before:bg-black lg:before:top-3">
-            Some Info
-          </span>
-          <h1 className="text-left text-lg font-medium uppercase tracking-widest lg:pb-16 lg:text-3xl">
-            About me
-          </h1>
-          <p className="py-12 text-base font-medium leading-normal  lg:rounded-3xl lg:bg-orange-100 lg:p-14 lg:text-xl">
+      </motion.section>
+      <section className="w-full bg-slate-100 px-4 py-20 text-sm lg:px-14 lg:py-32 lg:text-lg">
+        <motion.div
+          variants={slideInVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <Title messege="Some Info" title="About Me" />
+          <p className="py-12 text-base font-medium leading-normal  lg:rounded-3xl lg:bg-white lg:p-14 lg:text-xl">
             I am a passionate web developer. My journey in web development began
             with a strong curiosity for technology and a desire to create
             beautiful and functional websites. What sets me apart is my ability
@@ -117,39 +53,45 @@ function About() {
             their goals. Let's work together to bring your ideas to life and
             create exceptional web experiences that leave a lasting impression.
           </p>
-        </div>
-        <div className="relative py-12 lg:py-14">
-          <div className="relative block pb-2 pl-20 text-[10px] uppercase tracking-widest before:absolute before:left-0 before:top-2  before:h-[1px] before:w-12 before:bg-black lg:before:top-3">
-            Check
-          </div>
-          <div className="text-left text-lg font-medium uppercase tracking-widest lg:pb-16 lg:text-3xl">
-            My skills
-          </div>
-          <ul className="col-auto gap-3 py-10 text-center text-base leading-normal  lg:gap-14 lg:rounded-3xl lg:bg-orange-100 lg:p-10 lg:text-xl">
+        </motion.div>
+        <motion.div
+          variants={slideInVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative py-12 lg:py-14"
+        >
+          <Title messege="Check" title="My Skills" />
+          <ul className="col-auto gap-3 py-10 text-center text-base leading-normal  lg:gap-14 lg:rounded-3xl lg:bg-slate-100 lg:p-10 lg:text-xl">
             {skills.map((skill, i) => (
               <li
                 key={i}
-                className="flex flex-col items-center justify-center rounded-2xl bg-orange-100 p-3 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:bg-white"
+                className="flex flex-col items-center justify-center rounded-2xl bg-white p-3 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:bg-white"
               >
-                <img src={icons[i]} alt="" className="h-8 w-8 object-contain" />
+                <img
+                  src={skill.icon}
+                  alt=""
+                  className="h-8 w-8 object-contain"
+                />
                 <p className="pt-2 text-xs font-medium">{skill.language}</p>
               </li>
             ))}
           </ul>
-        </div>
-        <div className="relative py-12 lg:py-14">
-          <div className="relative block pb-2 pl-20 text-[10px] uppercase tracking-widest before:absolute before:left-0 before:top-2  before:h-[1px] before:w-12 before:bg-black lg:before:top-3">
-            Say hello
-          </div>
-          <div className="text-left text-lg font-medium uppercase tracking-widest lg:pb-16 lg:text-3xl">
-            Contact
-          </div>
-          <div className="lg:rounded-3xl lg:bg-orange-100 lg:p-10 lg:text-xl">
+        </motion.div>
+        <motion.div
+          variants={slideInVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="relative py-12 lg:py-14 "
+        >
+          <Title messege="Say hello" title="Contact" />
+          <div className="lg:rounded-3xl lg:bg-white lg:p-10 lg:text-xl">
             <h1 className="p-10 text-center text-xl font-medium lg:text-left lg:text-3xl lg:font-semibold">
               Get in touch
             </h1>
             <div className="block items-center justify-around space-y-6 lg:flex lg:space-y-0 ">
-              <div className="flex  flex-col items-center  justify-center rounded-3xl bg-orange-100 p-14 lg:min-h-[280px] lg:min-w-[420px] lg:bg-white">
+              <div className="flex min-h-[280px] flex-col items-center justify-center rounded-3xl bg-white p-14  transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:min-h-[280px] lg:min-w-[420px] lg:bg-slate-100">
                 <div className="mb-6 rounded-2xl bg-green-200 p-4 text-4xl ">
                   <FaEnvelope />
                 </div>
@@ -160,7 +102,7 @@ function About() {
                   <a href="mailto:canvanvam@gmail.com">Email Me</a>
                 </p>
               </div>
-              <div className=" flex flex-col items-center justify-center rounded-3xl bg-orange-100 p-14 lg:min-h-[280px] lg:min-w-[400px] lg:bg-white">
+              <div className="flex min-h-[280px] flex-col items-center justify-center rounded-3xl bg-white p-14 transition-all duration-300 ease-in hover:border-gray-100 hover:shadow-2xl lg:min-h-[280px] lg:min-w-[420px] lg:bg-slate-100">
                 <div className="mb-6 rounded-2xl bg-blue-200 p-4 text-4xl ">
                   <FaLinkedinIn />
                 </div>
@@ -172,13 +114,9 @@ function About() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
-      <section className="flex h-14 items-center justify-center bg-orange-400 lg:h-20">
-        <p className="text-sm text-white lg:text-lg lg:tracking-wider">
-          <small>©2023- ATSUKI KITADA</small>
-        </p>
-      </section>
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { useState } from "react";
-import Top from "./Top";
-import Work from "./Work";
-import About from "./About";
 import AppLayout from "./AppLayout";
+import Top from "./Top";
+import About from "./About";
+import Work from "./Work";
+import Error from "./Error";
 
 function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -14,6 +15,7 @@ function App() {
       element: (
         <AppLayout isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
       ),
+      errorElement: <Error />,
       children: [
         {
           path: "/",

@@ -12,7 +12,7 @@ export default {
         fontFamily: {
           tiltPrism: "Tilt Prism",
           main: ["Playfair Display", "sans-serif"],
-          title: ["Cardo", "sans-serif"],
+          title: ["Avenirnextltpro", "sans-serif"],
           about: ["Poppins", "sans-serif"],
         },
       },

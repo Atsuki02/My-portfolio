@@ -21,7 +21,7 @@ function PortfolioItem({
 }) {
   return (
     <div
-      className={`z-[5] flex items-center justify-center ${bgColor1} pb-16 pt-16 lg:pb-32 lg:pt-32`}
+      className={`z-[5] flex items-center justify-center bg-slate-100 pb-16 pt-16 lg:pb-32 lg:pt-32`}
     >
       <div
         className={`relative mx-4 flex h-[410px] min-h-[350px] w-full min-w-[300px] items-end ${bgColor2} shadow-2xl lg:h-1/2 lg:min-h-[550px] lg:w-2/3 lg:min-w-[820px] lg:max-w-screen-2xl lg:items-center`}
@@ -37,10 +37,10 @@ function PortfolioItem({
             <span className="block h-0.5 w-7 bg-slate-800"></span>
             <p className="p-2 text-lg lg:p-3 lg:text-xl">{index}</p>
           </div>
-          <p className="font-main pb-3 text-xl font-extrabold lg:pb-5 lg:text-3xl">
+          <p className="pb-3 text-xl font-extrabold lg:pb-5 lg:text-3xl">
             {title}
           </p>
-          <p className="font-main pb-3 text-sm font-semibold  lg:pb-5 lg:text-xl">
+          <p className="pb-3 text-sm font-semibold  lg:pb-5 lg:text-xl">
             Technologies used:{" "}
             {technologies.map((tech, i) => (
               <Fragment key={uuidv4()}>
@@ -73,7 +73,7 @@ function PortfolioItem({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`min-w-1/2 min-h-2/3 absolute right-8 top-4 z-10 flex h-[150px] w-[220px] -rotate-6 -skew-y-6 skew-x-6 rounded-xl border-8 ${borderColor2} bg-cover bg-center shadow-2xl transition-all duration-200 hover:rotate-0 hover:skew-x-0 hover:skew-y-0  lg:-right-20 lg:top-auto lg:min-h-[200px] lg:w-1/2 lg:min-w-[350px] lg:max-w-[400px] ${img}`}
+          className={`min-w-1/2 min-h-2/3 absolute right-4 top-0 z-10 flex h-[150px] w-[220px] -rotate-6 -skew-y-6 skew-x-6 rounded-xl border-8 ${borderColor2} bg-cover bg-center shadow-2xl transition-all duration-200 hover:rotate-0 hover:skew-x-0 hover:skew-y-0  lg:-right-20 lg:top-auto lg:min-h-[200px] lg:w-1/2 lg:min-w-[350px] lg:max-w-[400px] ${img}`}
         ></motion.div>
         <motion.div
           variants={bgVariants}
