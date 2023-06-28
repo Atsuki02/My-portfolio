@@ -7,6 +7,8 @@ import Footer from "./Footer";
 import ScrollIcon from "./ScrollIcon";
 import FirstView from "./FirstView";
 import ScrollToTop from "./ScrollToTop";
+
+// When deploying on Netrify, these images passed by relative path didn't work, but importing this way, it's fixed.
 import icon1 from "./images/icon1.png";
 import icon2 from "./images/icon2.png";
 import icon3 from "./images/icon3.png";

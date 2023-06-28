@@ -20,13 +20,13 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
         variants={navMenuVariants}
         initial="hidden"
         animate="show"
-        className="fixed right-14 top-12 z-30 h-[10rem] w-[10rem] flex-col items-center justify-center text-right text-sm font-bold tracking-widest text-white sm:right-20 sm:top-14 sm:h-[20rem] sm:w-[20rem] sm:text-2xl "
+        className="fixed right-14 top-16 z-30 h-[10rem] w-[10rem] flex-col items-center justify-center text-right text-sm font-bold tracking-widest text-white sm:right-20 sm:top-14 sm:h-[20rem] sm:w-[20rem] sm:text-2xl "
       >
         <motion.h1
           variants={navMenuVariants}
           initial="hidden"
           animate="show"
-          className="mb-3 border-b-[1px] pb-2 text-lg sm:mb-6 sm:p-4 sm:text-4xl"
+          className="mb-3 border-b-[1px] pb-2 text-xl sm:mb-6 sm:p-4 sm:text-4xl"
         >
           Category
         </motion.h1>
@@ -36,7 +36,7 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
             whileHover={{
               color: "#f8e112",
             }}
-            className="p-2  sm:p-4"
+            className="p-2 text-base sm:p-4 sm:text-2xl"
             onClick={() => setIsOpenMenu(!isOpenMenu)}
           >
             Top
@@ -48,7 +48,7 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
             whileHover={{
               color: "#f8e112",
             }}
-            className="p-2 sm:p-4"
+            className="p-2 text-base sm:p-4 sm:text-2xl"
             onClick={() => setIsOpenMenu(!isOpenMenu)}
           >
             About
@@ -60,7 +60,7 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
             whileHover={{
               color: "#f8e112",
             }}
-            className="p-2 sm:p-4"
+            className="p-2 text-base sm:p-4 sm:text-2xl"
             onClick={() => setIsOpenMenu(!isOpenMenu)}
           >
             Work
@@ -118,7 +118,7 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
         variants={navMenuContainerVariants}
         initial="hidden"
         animate="show"
-        className="fixed -right-24 -top-20 z-20 h-[25rem] w-[25rem] overflow-hidden rounded-[50%]  bg-orange-500 sm:-right-40 sm:-top-40 sm:h-[42rem] sm:w-[42rem] "
+        className="fixed -right-20 -top-14 z-20 h-[25rem] w-[25rem] overflow-hidden rounded-[50%]  bg-orange-500 sm:-right-40 sm:-top-40 sm:h-[42rem] sm:w-[42rem] "
       ></motion.div>
     </div>
   );
