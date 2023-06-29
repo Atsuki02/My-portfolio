@@ -52,7 +52,7 @@ function About() {
               ATSUKI KITADA
             </h1>
             <p className="text-center text-xs font-extrabold italic lg:text-xl ">
-              Bron in Japan, currently live in Vancouver, Canada
+              Born in Japan, currently live in Vancouver, Canada
             </p>
           </div>
         </motion.section>
