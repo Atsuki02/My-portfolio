@@ -62,7 +62,7 @@ export const skills = [
     icon: "../src/images/icon11.png",
   },
   {
-    language: "Framer",
+    language: "Motion",
     icon: "../src/images/icon12.png",
   },
   {
