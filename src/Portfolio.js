@@ -19,67 +19,67 @@ export const contacts = [
 export const skills = [
   {
     language: "HTML",
-    icon: "..src/images/icon1.png",
+    icon: "/images/icon1.png",
   },
   {
     language: "CSS",
-    icon: "../src/images/icon2.png",
+    icon: "/images/icon2.png",
   },
   {
     language: "SASS",
-    icon: "../src/images/icon3.png",
+    icon: "/images/icon3.png",
   },
   {
     language: "Javascript",
-    icon: "../src/images/icon4.png",
+    icon: "/images/icon4.png",
   },
   {
     language: "Typescript",
-    icon: "../src/images/icon5.png",
+    icon: "/images/icon5.png",
   },
   {
     language: "React",
-    icon: "../src/images/icon6.png",
+    icon: "/images/icon6.png",
   },
   {
     language: "Next.js",
-    icon: "../src/images/icon7.png",
+    icon: "/images/icon7.png",
   },
   {
     language: "Node.js",
-    icon: "../src/images/icon8.png",
+    icon: "/images/icon8.png",
   },
   {
     language: "Tailwindcss",
-    icon: "../src/images/icon9.png",
+    icon: "/images/icon9.png",
   },
   {
     language: "Bootstrap",
-    icon: "../src/images/icon10.png",
+    icon: "/images/icon10.png",
   },
   {
     language: "Git",
-    icon: "../src/images/icon11.png",
+    icon: "/images/icon11.png",
   },
   {
     language: "Motion",
-    icon: "../src/images/icon12.png",
+    icon: "/images/icon12.png",
   },
   {
     language: "VS code",
-    icon: "../src/images/icon13.png",
+    icon: "/images/icon13.png",
   },
   {
     language: "Firebase",
-    icon: "../src/images/icon14.png",
+    icon: "/images/icon14.png",
   },
   {
     language: "Figma",
-    icon: "../src/images/icon15.png",
+    icon: "/images/icon15.png",
   },
   {
     language: "Canva",
-    icon: "../src/images/icon16.png",
+    icon: "/images/icon16.png",
   },
 ];
 
@@ -89,7 +89,7 @@ export const portfolioItems = [
     title: "Clicker Empire Game",
     description:
       "This is a game where you can accumulate wealth by taking on various jobs, making investments, and investing in real estate, among other activities. The goal of the game is to amass wealth and establish a prosperous empire within the city.",
-    img: "bg-[url('../src/images/portfolio1.png')]",
+    img: "bg-[url('/images/portfolio1.png')]",
     technologies: ["HTML", "CSS", "Javascript"],
     bgColor1: "bg-orange-200",
     bgColor2: "bg-orange-200",
@@ -105,7 +105,7 @@ export const portfolioItems = [
     title: "Yakiniku Hokuden",
     description:
       "This website belongs to a BBQ restaurant, where we proudly present our services through enticing pictures that will tempt your taste buds and captivate your senses. ",
-    img: "bg-[url('../src/images/portfolio2.png')]",
+    img: "bg-[url('/images/portfolio2.png')]",
     technologies: ["HTML", "SASS", "Javascript"],
     bgColor1: "bg-red-200",
     bgColor2: "bg-red-200",
@@ -120,7 +120,7 @@ export const portfolioItems = [
     title: "usePopcorn",
     description:
       "This web application allows you to rate the movies you have watched and add them to your watched list.",
-    img: "bg-[url('../src/images/portfolio3.png')]",
+    img: "bg-[url('/images/portfolio3.png')]",
     technologies: ["React", "React Hook"],
     bgColor1: "bg-violet-200",
     bgColor2: "bg-violet-200",
@@ -136,7 +136,7 @@ export const portfolioItems = [
     title: "The React app",
     description:
       "This is a quiz game application that challenges you to answer a series of questions about React within a limited time. Can you prove your knowledge by answering more than a dozen questions correctly?",
-    img: "bg-[url('../src/images/portfolio4.png')]",
+    img: "bg-[url('/images/portfolio4.png')]",
     technologies: ["React"],
     bgColor1: "bg-blue-200",
     bgColor2: "bg-blue-200",
@@ -151,7 +151,7 @@ export const portfolioItems = [
     title: "WorldWise",
     description:
       "This web application allows you to visually track and mark the places you have visited on a world map. It provides a visual representation of your travel journey across the globe.",
-    img: "bg-[url('../src/images/portfolio5.png')]",
+    img: "bg-[url('/images/portfolio5.png')]",
     technologies: ["React", "React Router"],
     bgColor1: "bg-emerald-200",
     bgColor2: "bg-emerald-200",
@@ -167,7 +167,7 @@ export const portfolioItems = [
     title: "Split-n-Bill",
     description:
       "This web application assists you in calculating and splitting bills when you need to share expenses with others. It helps you determine the total bill amount and how much each person owes, making it easier to manage shared expenses.",
-    img: "bg-[url('../src/images/portfolio6.png')]",
+    img: "bg-[url('/images/portfolio6.png')]",
     technologies: ["React"],
     bgColor1: "bg-orange-200",
     bgColor2: "bg-orange-200",
@@ -182,7 +182,7 @@ export const portfolioItems = [
     title: "Expense Track App",
     description:
       "This web application enables you to maintain a record of your monthly expenses, helping you keep track of your spending habits and how much you have spent. It provides a convenient way to monitor and manage your expenses effectively.",
-    img: "bg-[url('../src/images/portfolio7.png')]",
+    img: "bg-[url('/images/portfolio7.png')]",
     technologies: ["React"],
     bgColor1: "bg-purple-200",
     bgColor2: "bg-purple-200",
