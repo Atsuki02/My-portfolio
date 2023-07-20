@@ -46,15 +46,14 @@ function About() {
           >
             <Title messege="Some Info" title="About Me" />
             <p className="py-12 text-base font-medium leading-normal  lg:rounded-3xl lg:bg-white lg:p-14 lg:text-xl">
-              I am a passionate web developer. My journey in web development
-              began with a strong curiosity for technology and a desire to
-              create beautiful and functional websites. What sets me apart is my
-              ability that I thrive in environments that encourage creativity,
-              problem-solving, and continuous learning. I am excited to
-              contribute my skills and expertise to help businesses and
-              individuals achieve their goals. Let's work together to bring your
-              ideas to life and create exceptional web experiences that leave a
-              lasting impression.
+              I am a passionate web developer with a strong curiosity for
+              technology and a keen eye for creating beautiful and functional
+              websites. My drive for creativity, problem-solving, and continuous
+              learning sets me apart. I am enthusiastic about contributing my
+              skills and expertise to help businesses and individuals achieve
+              their goals. Let's collaborate to bring your ideas to life and
+              create exceptional web experiences that leave a lasting
+              impression.
             </p>
           </motion.div>
           <motion.div

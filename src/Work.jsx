@@ -22,23 +22,7 @@ function Work() {
         </section>
         <section id="portfolio" className="bg-slate-100 pb-16 lg:pb-32">
           {portfolioItems.map((item) => {
-            return (
-              <PortfolioItem
-                key={item.title}
-                index={item.index}
-                title={item.title}
-                description={item.description}
-                img={item.img}
-                technologies={item.technologies}
-                bgColor1={item.bgColor1}
-                bgColor2={item.bgColor2}
-                borderColor1={item.borderColor1}
-                textColor1={item.textColor1}
-                buttonBgColor={item.buttonBgColor}
-                borderColor2={item.borderColor2}
-                bgColor3={item.bgColor3}
-              />
-            );
+            return <PortfolioItem item={item} />;
           })}
         </section>
         <Footer />

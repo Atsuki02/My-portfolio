@@ -5,26 +5,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
-function PortfolioItem({
-  index,
-  title,
-  description,
-  img,
-  technologies,
-  bgColor1,
-  bgColor2,
-  borderColor1,
-  textColor1,
-  buttonBgColor,
-  borderColor2,
-  bgColor3,
-}) {
+function PortfolioItem({ item }) {
+  const {
+    index,
+    title,
+    description,
+    img,
+    technologies,
+    link,
+    bgColor1,
+    borderColor1,
+    textColor1,
+    buttonBgColor,
+    borderColor2,
+    bgColor3,
+  } = item;
   return (
     <div
       className={`z-[5] flex items-center justify-center bg-slate-100 pb-16 pt-16 lg:pb-32 lg:pt-32`}
     >
       <div
-        className={`relative mx-4 flex h-[410px] min-h-[350px] w-full min-w-[300px] items-end ${bgColor2} shadow-2xl lg:h-1/2 lg:min-h-[550px] lg:w-2/3 lg:min-w-[820px] lg:max-w-screen-2xl lg:items-center`}
+        className={`relative mx-4 flex h-[410px] min-h-[350px] w-full min-w-[300px] items-end ${bgColor1} shadow-2xl lg:h-1/2 lg:min-h-[550px] lg:w-2/3 lg:min-w-[820px] lg:max-w-screen-2xl lg:items-center`}
       >
         <motion.div
           variants={slideInVariants}
@@ -60,6 +61,7 @@ function PortfolioItem({
           </p>
           <button
             className={`mt-6 flex items-center justify-center ${buttonBgColor} px-4 py-2 text-xs  uppercase text-white shadow-lg transition-all duration-200 hover:scale-105 lg:mt-8 lg:px-8 lg:py-4 lg:text-base`}
+            onClick={() => window.open(`${link}`, "_blank")}
           >
             <span className="lg:pr-3">View Website</span>
             <FontAwesomeIcon

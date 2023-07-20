@@ -106,7 +106,7 @@ function NavMenu({ isOpenMenu, setIsOpenMenu }) {
           </motion.a>
           <motion.a
             variants={navIconVariants}
-            href="report.pdf"
+            href="/files/Atsuki_Resume.pdf"
             target="_blank"
             className="text-xl sm:text-4xl"
           >
