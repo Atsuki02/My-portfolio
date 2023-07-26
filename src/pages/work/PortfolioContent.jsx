@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
-import { slideInVariants } from "./motion";
+import { slideInVariants } from "../../motion";
+import { Fragment } from "react";
 
-function PortfolioContent(props) {
+function PortfolioContent({ item }) {
   const {
     index,
     title,
@@ -15,7 +15,8 @@ function PortfolioContent(props) {
     borderColor1,
     textColor1,
     buttonBgColor,
-  } = props.item;
+  } = item;
+
   return (
     <motion.div
       variants={slideInVariants}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideInVariants } from "./motion";
+import { slideInVariants } from "../../motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FaAngleDown } from "react-icons/fa";
 

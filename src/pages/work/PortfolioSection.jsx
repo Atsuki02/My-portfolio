@@ -1,5 +1,4 @@
-import React from "react";
-import { portfolioItems } from "./portfolio";
+import { portfolioItems } from "../../portfolio";
 import PortfolioItem from "./PortfolioItem";
 
 function PortfolioSection() {

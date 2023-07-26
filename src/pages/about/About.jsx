@@ -1,10 +1,7 @@
-// components/About.js
-import React from "react";
-
-import Footer from "./Footer";
-import IntroSection from "./IntroSection";
+import Footer from "../ui/Footer";
 import AboutMeSection from "./AboutMeSection";
 import InformationSection from "./InformationSection";
+import IntroSection from "./IntroSection";
 
 function About() {
   return (

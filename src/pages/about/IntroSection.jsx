@@ -1,5 +1,5 @@
-import FirstView from "./FirstView";
-import ScrollIcon from "./ScrollIcon";
+import FirstView from "../ui/FirstView";
+import ScrollIcon from "../ui/ScrollIcon";
 
 const IntroSection = () => {
   return (

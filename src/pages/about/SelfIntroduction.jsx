@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { slideInVariants } from "./motion";
-import Title from "./Title";
+import { slideInVariants } from "../../motion";
+import Title from "../ui/Title";
 
 function SelfIntroduction() {
   return (

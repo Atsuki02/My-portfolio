@@ -1,7 +1,6 @@
-import React from "react";
-import FirstView from "./FirstView";
-import ScrollIcon from "./ScrollIcon";
-import Title from "./Title";
+import FirstView from "../../FirstView";
+import ScrollIcon from "../../ScrollIcon";
+import Title from "../../Title";
 
 function WorkIntroSection() {
   return (

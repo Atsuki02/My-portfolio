@@ -11,7 +11,7 @@ import {
   navIconVariants,
   navMenuVariants,
   navMenuContainerVariants,
-} from "./motion";
+} from "../../motion";
 
 function NavMenu({ isOpenMenu, setIsOpenMenu }) {
   return (

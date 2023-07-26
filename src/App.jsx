@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { useState } from "react";
-import AppLayout from "./AppLayout";
-import Top from "./Top";
-import About from "./About";
-import Work from "./Work";
-import Error from "./Error";
-import ScrollToTop from "./ScrollToTop";
+import Top from "./pages/top/Top";
+import About from "./pages/about/About";
+import Work from "./pages/work/Work";
+import AppLayout from "./pages/ui/AppLayout";
+import ScrollToTop from "./pages/ui/ScrollToTop";
+import Error from "./pages/ui/Error";
 
 function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);

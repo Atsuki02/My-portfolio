@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { bgVariants, slideInVariants } from "./motion";
+import { bgVariants, slideInVariants } from "../../motion";
 
-function PortfolioImage(props) {
-  const { img, borderColor2, bgColor3 } = props.item;
+function PortfolioImage({ item }) {
+  const { img, borderColor2, bgColor3 } = item;
 
   return (
     <>

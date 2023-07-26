@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { sentetnceVariants } from "./motion";
+import { sentetnceVariants } from "../../motion";
 
 function FirstView({ line1, line2, line3 }) {
   return (

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { slideInVariants } from "./motion";
+import { slideInVariants } from "../../motion";
 import { FaEnvelope, FaLinkedinIn } from "react-icons/fa";
-import Title from "./Title";
+import Title from "../ui/Title";
 
 const ContactSection = () => {
   return (

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import FirstView from "./FirstView";
-import PreLoader from "./PreLoader";
+import FirstView from "../ui/FirstView";
+import PreLoader from "../ui/PreLoader";
 
 function Top({ isLoading, setIsLoading }) {
   useEffect(() => {

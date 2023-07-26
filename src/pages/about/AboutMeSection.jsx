@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { slideInVariants } from "./motion";
+import { slideInVariants } from "../../motion";
 
 const AboutMeSection = () => {
   return (

@@ -1,6 +1,6 @@
-import Footer from "./Footer";
-import IntroSection from "./IntroSection";
+import IntroSection from "../about/IntroSection";
 import PortfolioSection from "./PortfolioSection";
+import Footer from "../ui/Footer";
 
 function Work() {
   return (

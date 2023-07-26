@@ -1,8 +1,8 @@
 import PortfolioContent from "./PortfolioContent";
 import PortfolioImage from "./PortfolioImage";
 
-function PortfolioItem(props) {
-  const { bgColor1 } = props.item;
+function PortfolioItem({ item }) {
+  const { bgColor1 } = item;
 
   return (
     <div
@@ -11,8 +11,8 @@ function PortfolioItem(props) {
       <div
         className={`relative mx-4 flex h-[410px] min-h-[350px] w-full min-w-[300px] items-end ${bgColor1} shadow-2xl lg:h-1/2 lg:min-h-[550px] lg:w-2/3 lg:min-w-[820px] lg:max-w-screen-2xl lg:items-center`}
       >
-        <PortfolioContent item={props.item} />
-        <PortfolioImage item={props.item} />
+        <PortfolioContent item={item} />
+        <PortfolioImage item={item} />
       </div>
     </div>
   );
