@@ -5,6 +5,7 @@ import Top from "./Top";
 import About from "./About";
 import Work from "./Work";
 import Error from "./Error";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -13,7 +14,10 @@ function App() {
   const router = createBrowserRouter([
     {
       element: (
-        <AppLayout isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+        <>
+          <AppLayout isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+          <ScrollToTop />
+        </>
       ),
       errorElement: <Error />,
       children: [
