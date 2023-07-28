@@ -105,7 +105,7 @@ export const portfolioItems = [
     description:
       "This innovative web application empowers customers to conveniently place their food orders directly from their smartphones while dining at a BBQ restaurant.",
     img: "bg-[url('/images/portfolio2.png')]",
-    technologies: ["React", "React Router", "Redux"],
+    technologies: ["React", "React Router", "Redux toolkit"],
     link: "https://meatymeat.netlify.app/",
     bgColor1: "bg-red-200",
     borderColor1: "lg:border-red-500",
@@ -120,7 +120,7 @@ export const portfolioItems = [
     description:
       "This web application enables users to conveniently make reservations at a restaurant right from the comfort of their own home.",
     img: "bg-[url('/images/portfolio3.png')]",
-    technologies: ["React Router", "Redux", "React Query", "Supabase"],
+    technologies: ["React Router", "Redux toolkit", "React Query", "Supabase"],
     link: "https://meating-you.netlify.app/",
     bgColor1: "bg-teal-200",
     borderColor1: "lg:border-teal-500",
@@ -135,7 +135,7 @@ export const portfolioItems = [
     description:
       "This web application allows you to rate the movies you have watched and add them to your watched list.",
     img: "bg-[url('/images/portfolio4.png')]",
-    technologies: ["React", "React Hook"],
+    technologies: ["React", "React Hooks"],
     link: "",
     bgColor1: "bg-violet-200",
     borderColor1: "lg:border-violet-500",
@@ -151,7 +151,7 @@ export const portfolioItems = [
     description:
       "This is a quiz game application that challenges you to answer a series of questions about React within a limited time. Can you prove your knowledge by answering more than a dozen questions correctly?",
     img: "bg-[url('/images/portfolio5.png')]",
-    technologies: ["React"],
+    technologies: ["React", "React Hooks"],
     link: "",
     bgColor1: "bg-blue-200",
     borderColor1: "lg:border-blue-500",
