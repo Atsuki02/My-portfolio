@@ -12,13 +12,11 @@ function PreLoader() {
   }, [count]);
 
   return (
-    <div className="relative z-30 h-screen w-screen bg-slate-700 bg-gradient-to-r font-[sans]">
-      <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center">
-        <ClockLoader color={"#f97316"} size={100} />
-        <div className="flex justify-center pt-12 text-4xl font-bold tracking-widest text-slate-100">
-          <motion.h1>{rounded}</motion.h1>
-          <p className="">％</p>
-        </div>
+    <div className="relative flex h-screen w-screen flex-col items-center justify-center bg-slate-700 bg-gradient-to-r font-[sans]">
+      <ClockLoader color={"#f97316"} size={100} />
+      <div className="flex justify-center pt-12 text-4xl font-bold tracking-widest text-slate-100">
+        <motion.h1>{rounded}</motion.h1>
+        <p className="">％</p>
       </div>
     </div>
   );
