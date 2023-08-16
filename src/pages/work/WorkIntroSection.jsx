@@ -1,6 +1,6 @@
-import FirstView from "../../FirstView";
-import ScrollIcon from "../../ScrollIcon";
-import Title from "../../Title";
+import FirstView from "../ui/FirstView";
+import ScrollIcon from "../ui/ScrollIcon";
+import Title from "../ui/Title";
 
 function WorkIntroSection() {
   return (

@@ -1,4 +1,4 @@
-import { portfolioItems } from "../../portfolio";
+import { portfolioItems } from "../../Portfolio";
 import PortfolioItem from "./PortfolioItem";
 
 function PortfolioSection() {
