@@ -8,7 +8,7 @@ function NavButton({ isOpenMenu, setIsOpenMenu }) {
         <div
           className={
             isOpenMenu
-              ? "h-[0.2rem] w-5 rotate-45 bg-white transition-all duration-100 sm:h-[0.2rem] sm:w-7 sm:translate-y-[0.6rem]"
+              ? "h-[0.2rem] w-5 translate-y-[0.35rem] rotate-45 bg-white transition-all duration-100 sm:h-[0.2rem] sm:w-7 sm:translate-y-[0.6rem]"
               : "h-[0.2rem] w-5 bg-white sm:h-[0.2rem] sm:w-7"
           }
         />
@@ -22,7 +22,7 @@ function NavButton({ isOpenMenu, setIsOpenMenu }) {
         <div
           className={
             isOpenMenu
-              ? "h-[0.2rem] w-5 -rotate-45 bg-white transition-all duration-100 sm:h-[0.2rem] sm:w-7 sm:-translate-y-[0.6rem]"
+              ? "h-[0.2rem] w-5 -translate-y-[0.35rem] -rotate-45 bg-white transition-all duration-100 sm:h-[0.2rem] sm:w-7 sm:-translate-y-[0.6rem]"
               : "h-[0.2rem] w-5 bg-white sm:h-[0.2rem] sm:w-7"
           }
         />
