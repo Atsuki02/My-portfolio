@@ -139,7 +139,7 @@ export const portfolioItems = [
     index: 4,
     title: "Computer builder",
     description:
-      "Craft your dream PC with our interactive Computer Builder. Customize components and visualize your ultimate computing experience!",
+      "Craft your dream PC with this interactive Computer Builder. Customize components and visualize your ultimate computing experience!",
     img: "bg-[url('/images/portfolio4.png')]",
     technologies: ["React", "Typescript", "ContextAPI", "Styled Components"],
     link: "",
