@@ -1,6 +1,6 @@
 Link
 ========
-<https://atsuki.netlify.app/>
+<https://atsukiii.com/>
 
 Title
 =====================
