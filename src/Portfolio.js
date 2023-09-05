@@ -86,25 +86,10 @@ export const skills = [
 export const portfolioItems = [
   {
     index: 1,
-    title: "Meaty meat",
-    description:
-      "This innovative web application empowers customers to conveniently place their food orders directly from their smartphones while dining at a BBQ restaurant.",
-    img: "bg-[url('/images/portfolio1.png')]",
-    technologies: ["React", "React Router", "Redux toolkit", "TailwindCSS"],
-    link: "https://meatymeat.netlify.app/",
-    bgColor1: "bg-red-200",
-    borderColor1: "lg:border-red-500",
-    textColor1: "text-red-500",
-    buttonBgColor: "bg-red-400",
-    borderColor2: "border-red-800",
-    bgColor3: "bg-red-600",
-  },
-  {
-    index: 2,
     title: "Meating you",
     description:
       "This web application enables users to conveniently make reservations at a restaurant right from the comfort of their own home.",
-    img: "bg-[url('/images/portfolio2.png')]",
+    img: "bg-[url('/images/portfolio1.png')]",
     technologies: [
       "React Router",
       "Redux toolkit",
@@ -119,6 +104,21 @@ export const portfolioItems = [
     buttonBgColor: "bg-teal-400",
     borderColor2: "border-teal-800",
     bgColor3: "bg-teal-600",
+  },
+  {
+    index: 2,
+    title: "Meaty meat",
+    description:
+      "This innovative web application empowers customers to conveniently place their food orders directly from their smartphones while dining at a BBQ restaurant.",
+    img: "bg-[url('/images/portfolio2.png')]",
+    technologies: ["React", "React Router", "Redux toolkit", "TailwindCSS"],
+    link: "https://meatymeat.netlify.app/",
+    bgColor1: "bg-red-200",
+    borderColor1: "lg:border-red-500",
+    textColor1: "text-red-500",
+    buttonBgColor: "bg-red-400",
+    borderColor2: "border-red-800",
+    bgColor3: "bg-red-600",
   },
   {
     index: 3,
@@ -152,10 +152,25 @@ export const portfolioItems = [
   },
   {
     index: 5,
+    title: "File Directory Sysetem",
+    description:
+      "Explore a user-friendly File Directory System, where commands empower you to navigate, create, and manage your virtual world effortlessly!",
+    img: "bg-[url('/images/portfolio5.png')]",
+    technologies: ["HTML", "CSS", "Typescript"],
+    link: "https://filedirectorysys.netlify.app/",
+    bgColor1: "bg-emerald-200",
+    borderColor1: "lg:border-emerald-500",
+    textColor1: "text-emerald-500",
+    buttonBgColor: "bg-emerald-400",
+    borderColor2: "border-emerald-800",
+    bgColor3: "bg-emerald-600",
+  },
+  {
+    index: 6,
     title: "Clicker Empire Game",
     description:
       "This is a game where you can accumulate wealth by taking on various jobs, making investments, and investing in real estate, among other activities. The goal of the game is to amass wealth and establish a prosperous empire within the city.",
-    img: "bg-[url('/images/portfolio5.png')]",
+    img: "bg-[url('/images/portfolio6.png')]",
     technologies: ["HTML", "CSS", "Javascript"],
     link: "https://clicker-empire-game.netlify.app/",
     bgColor1: "bg-orange-200",
@@ -167,11 +182,11 @@ export const portfolioItems = [
   },
 
   {
-    index: 6,
+    index: 7,
     title: "Yakiniku Hokuden",
     description:
       "This website belongs to a BBQ restaurant, where we proudly present our services through enticing pictures that will tempt your taste buds and captivate your senses. ",
-    img: "bg-[url('/images/portfolio6.png')]",
+    img: "bg-[url('/images/portfolio7.png')]",
     technologies: ["HTML", "SASS", "Javascript"],
     link: "https://hokuden.verse.jp/",
     bgColor1: "bg-red-200",
@@ -182,11 +197,11 @@ export const portfolioItems = [
     bgColor3: "bg-red-600",
   },
   {
-    index: 7,
+    index: 8,
     title: "usePopcorn",
     description:
       "This web application allows you to rate the movies you have watched and add them to your watched list.",
-    img: "bg-[url('/images/portfolio7.png')]",
+    img: "bg-[url('/images/portfolio8.png')]",
     technologies: ["React", "React Hooks"],
     link: "",
     bgColor1: "bg-violet-200",
@@ -198,11 +213,11 @@ export const portfolioItems = [
   },
 
   {
-    index: 8,
+    index: 9,
     title: "The React app",
     description:
       "This is a quiz game application that challenges you to answer a series of questions about React within a limited time. Can you prove your knowledge by answering more than a dozen questions correctly?",
-    img: "bg-[url('/images/portfolio8.png')]",
+    img: "bg-[url('/images/portfolio9.png')]",
     technologies: ["React", "React Hooks"],
     link: "",
     bgColor1: "bg-blue-200",
@@ -213,11 +228,11 @@ export const portfolioItems = [
     bgColor3: "bg-blue-600",
   },
   {
-    index: 9,
+    index: 10,
     title: "WorldWise",
     description:
       "This web application allows you to visually track and mark the places you have visited on a world map. It provides a visual representation of your travel journey across the globe.",
-    img: "bg-[url('/images/portfolio9.png')]",
+    img: "bg-[url('/images/portfolio10.png')]",
     technologies: ["React", "React Router"],
     link: "",
     bgColor1: "bg-emerald-200",
@@ -229,11 +244,11 @@ export const portfolioItems = [
   },
 
   {
-    index: 10,
+    index: 11,
     title: "Split-n-Bill",
     description:
       "This web application assists you in calculating and splitting bills when you need to share expenses with others. It helps you determine the total bill amount and how much each person owes, making it easier to manage shared expenses.",
-    img: "bg-[url('/images/portfolio10.png')]",
+    img: "bg-[url('/images/portfolio11.png')]",
     technologies: ["React"],
     link: "",
     bgColor1: "bg-orange-200",
@@ -244,11 +259,11 @@ export const portfolioItems = [
     bgColor3: "bg-orange-600",
   },
   {
-    index: 11,
+    index: 12,
     title: "Expense Track App",
     description:
       "This web application enables you to maintain a record of your monthly expenses, helping you keep track of your spending habits and how much you have spent. It provides a convenient way to monitor and manage your expenses effectively.",
-    img: "bg-[url('/images/portfolio11.png')]",
+    img: "bg-[url('/images/portfolio12.png')]",
     technologies: ["React"],
     link: "",
     bgColor1: "bg-purple-200",
