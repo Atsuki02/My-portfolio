@@ -14,8 +14,8 @@ function Top({ isLoading, setIsLoading }) {
       {isLoading ? (
         <PreLoader />
       ) : (
-        <section className="flex h-screen flex-col items-center justify-center bg-white p-16 text-center text-xl">
-          <FirstView line1="I" line2="AM" line3="ATSUKI" />
+        <section className='flex h-screen flex-col items-center justify-center bg-white p-16 text-center text-xl'>
+          <FirstView line1='ATSUKI' line2='KITADA' line3='' />
         </section>
       )}
     </>
