@@ -86,7 +86,7 @@ export const skills = [
 export const portfolioItems = [
   {
     index: 1,
-    title: "Meating you",
+    title: "Reservation app",
     description:
       "This web application enables users to conveniently make reservations at a restaurant right from the comfort of their own home.",
     img: "bg-[url('/images/portfolio1.png')]",
@@ -107,7 +107,7 @@ export const portfolioItems = [
   },
   {
     index: 2,
-    title: "Meaty meat",
+    title: "Food order app",
     description:
       "This innovative web application empowers customers to conveniently place their food orders directly from their smartphones while dining at a BBQ restaurant.",
     img: "bg-[url('/images/portfolio2.png')]",
@@ -122,7 +122,7 @@ export const portfolioItems = [
   },
   {
     index: 3,
-    title: "My portfolio site",
+    title: "Artist portfolio site",
     description:
       "Welcome to the portfolio website of a distinguished makeup artist, where you'll discover an exquisite collection of artistic and visually stunning photographs.",
     img: "bg-[url('/images/portfolio3.png')]",
