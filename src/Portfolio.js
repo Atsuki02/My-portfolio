@@ -167,7 +167,7 @@ export const portfolioItems = [
   },
   {
     index: 6,
-    title: "File Directory Sysetem",
+    title: "File Directory System",
     description:
       "Explore a user-friendly File Directory System, where commands empower you to navigate, create, and manage your virtual world effortlessly!",
     img: "bg-[url('/images/portfolio6.png')]",
