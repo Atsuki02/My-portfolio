@@ -1,21 +1,17 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { useState } from "react";
 import Top from "./pages/top/Top";
 import About from "./pages/about/About";
 import Work from "./pages/work/Work";
-import AppLayout from "./pages/ui/AppLayout";
 import ScrollToTop from "./pages/ui/ScrollToTop";
 import Error from "./pages/ui/Error";
+import { AppLayout } from "./pages/ui/AppLayout.jsx";
 
 function App() {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
   const router = createBrowserRouter([
     {
       element: (
         <>
-          <AppLayout isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+          <AppLayout />
           <ScrollToTop />
         </>
       ),
@@ -23,7 +19,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Top isLoading={isLoading} setIsLoading={setIsLoading} />,
+          element: <Top />,
         },
         { path: "/about", element: <About /> },
         {

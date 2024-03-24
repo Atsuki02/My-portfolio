@@ -19,67 +19,91 @@ export const contacts = [
 export const skills = [
   {
     language: "HTML",
-    icon: "/images/icon1.png",
+    icon: "/images/html.png",
   },
   {
     language: "CSS",
-    icon: "/images/icon2.png",
+    icon: "/images/css.png",
   },
   {
     language: "SASS",
-    icon: "/images/icon3.png",
+    icon: "/images/sass.png",
   },
   {
     language: "Javascript",
-    icon: "/images/icon4.png",
+    icon: "/images/javascript.png",
   },
   {
     language: "Typescript",
-    icon: "/images/icon5.png",
+    icon: "/images/typescript.png",
   },
   {
     language: "React",
-    icon: "/images/icon6.png",
+    icon: "/images/react.png",
   },
   {
     language: "Next.js",
-    icon: "/images/icon7.png",
+    icon: "/images/next.png",
   },
   {
     language: "Node.js",
-    icon: "/images/icon8.png",
+    icon: "/images/node.png",
+  },
+  {
+    language: "Express.js",
+    icon: "/images/express.png",
+  },
+  {
+    language: "Nest.js",
+    icon: "/images/nest.png",
   },
   {
     language: "Tailwindcss",
-    icon: "/images/icon9.png",
+    icon: "/images/tailwind.png",
   },
   {
     language: "Bootstrap",
-    icon: "/images/icon10.png",
+    icon: "/images/bootstrap.png",
   },
   {
-    language: "Git",
-    icon: "/images/icon11.png",
+    language: "Styled components",
+    icon: "/images/styledComponents.png",
   },
   {
-    language: "Motion",
-    icon: "/images/icon12.png",
+    language: "Framer Motion",
+    icon: "/images/framerMotion.png",
   },
   {
-    language: "VS code",
-    icon: "/images/icon13.png",
+    language: "PostgreSQL",
+    icon: "/images/postgresql.png",
+  },
+  {
+    language: "MySQL",
+    icon: "/images/mysql.png",
+  },
+  {
+    language: "Prisma",
+    icon: "/images/prisma.png",
   },
   {
     language: "Supabase",
-    icon: "/images/icon14.png",
+    icon: "/images/supabase.png",
+  },
+  {
+    language: "Git",
+    icon: "/images/git.png",
+  },
+  {
+    language: "Docker",
+    icon: "/images/docker.png",
+  },
+  {
+    language: "Storybook",
+    icon: "/images/storybook.png",
   },
   {
     language: "Figma",
-    icon: "/images/icon15.png",
-  },
-  {
-    language: "Canva",
-    icon: "/images/icon16.png",
+    icon: "/images/figma.png",
   },
 ];
 
@@ -91,7 +115,7 @@ export const portfolioItems = [
       "This web application enables users to conveniently make reservations at a restaurant right from the comfort of their own home.",
     img: "bg-[url('/images/portfolio1.png')]",
     technologies: [
-      "React Router",
+      "React",
       "Redux toolkit",
       "React Query",
       "Supabase",
@@ -198,7 +222,7 @@ export const portfolioItems = [
 
   {
     index: 8,
-    title: "Yakiniku Hokuden",
+    title: "BBQ restaurant website",
     description:
       "This website belongs to a BBQ restaurant, where we proudly present our services through enticing pictures that will tempt your taste buds and captivate your senses. ",
     img: "bg-[url('/images/portfolio8.png')]",
