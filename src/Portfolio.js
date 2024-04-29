@@ -1,4 +1,4 @@
-export const contacts = [
+const contacts = [
   {
     name: "github",
     url: "https://github.com/Atsuki02",
@@ -16,7 +16,7 @@ export const contacts = [
   },
 ];
 
-export const skills = [
+const skills = [
   {
     language: "HTML",
     icon: "/images/html.png",
@@ -111,7 +111,7 @@ export const skills = [
   },
 ];
 
-export const portfolioItems = [
+const portfolioItems = [
   {
     index: 1,
     title: "Fairy share",
@@ -263,3 +263,5 @@ export const portfolioItems = [
     bgColor3: "bg-red-600",
   },
 ];
+
+export { contacts, skills, portfolioItems };
