@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { slideInVariants } from "../../motion";
 import Title from "../ui/Title";
-import { skills } from "../../portfolio";
+import { skills } from "../../Portfolio";
 
 const SkillsSection = () => {
   return (
