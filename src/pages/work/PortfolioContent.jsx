@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { slideInVariants } from "../../motion";
+import { FaGithub } from "react-icons/fa";
 
 function PortfolioContent({ item }) {
   const {
@@ -10,6 +11,7 @@ function PortfolioContent({ item }) {
     description,
     technologies,
     link,
+    githubLink,
     borderColor1,
     textColor1,
     buttonBgColor,
@@ -42,16 +44,27 @@ function PortfolioContent({ item }) {
       <p className='font-[description] text-xs tracking-tighter text-slate-700 lg:text-lg'>
         {description}
       </p>
-      <button
-        className={`mt-6 flex items-center justify-center ${buttonBgColor} px-4 py-2 text-xs  uppercase text-white shadow-lg transition-all duration-200 hover:scale-105 lg:mt-8 lg:px-8 lg:py-4 lg:text-base`}
-        onClick={() => window.open(`${link}`, "_blank")}
-      >
-        <span className='lg:pr-3'>View Website</span>
-        <FontAwesomeIcon
-          icon={faArrowUpRightFromSquare}
-          className='hidden lg:block'
-        />
-      </button>
+      <div className='flex justify-between gap-4'>
+        {link && (
+          <button
+            className={`mt-6 flex items-center justify-center ${buttonBgColor} px-4 py-2 text-xs  uppercase text-white shadow-lg transition-all duration-200 hover:scale-105 lg:mt-8 lg:px-8 lg:py-4 lg:text-base`}
+            onClick={() => window.open(`${link}`, "_blank")}
+          >
+            <span className='lg:pr-3'>VIEW SITE</span>
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className='pl-2 lg:pl-3'
+            />
+          </button>
+        )}
+        <button
+          className={`mt-6 flex items-center justify-center ${buttonBgColor} px-4 py-2 text-xs  uppercase text-white shadow-lg transition-all duration-200 hover:scale-105 lg:mt-8 lg:px-8 lg:py-4 lg:text-base`}
+          onClick={() => window.open(`${githubLink}`, "_blank")}
+        >
+          <span className='pr-2 lg:pr-3'>Github</span>
+          <FaGithub />
+        </button>
+      </div>
     </motion.div>
   );
 }
