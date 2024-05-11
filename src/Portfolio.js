@@ -141,10 +141,32 @@ const portfolioItems = [
   },
   {
     index: 2,
+    title: "GIS and AI Company's website",
+    description:
+      "Designed and developed the official website for a leading GIS and AI company, utilizing Next.js for the frontend to ensure a visually appealing and responsive design.",
+    img: "bg-[url('/images/portfolio2.png')]",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "Styled Components",
+      "WordPress",
+      "Docker",
+    ],
+    link: "https://www.microgeo.biz/",
+    githubLink: "https://github.com/microbase-miraie/Microbase-website",
+    bgColor1: "bg-sky-200",
+    borderColor1: "lg:border-sky-500",
+    textColor1: "text-sky-500",
+    buttonBgColor: "bg-sky-400",
+    borderColor2: "border-sky-900",
+    bgColor3: "bg-sky-600",
+  },
+  {
+    index: 3,
     title: "Real-time chat app",
     description:
       "This web application offers real-time group chat and direct messaging, all wrapped in a sleek and user-friendly interface.",
-    img: "bg-[url('/images/portfolio2.png')]",
+    img: "bg-[url('/images/portfolio3.png')]",
     technologies: [
       "React",
       "Typescript",
@@ -166,11 +188,11 @@ const portfolioItems = [
     bgColor3: "bg-blue-600",
   },
   {
-    index: 3,
+    index: 4,
     title: "Blog app",
     description:
       "This application allows users to share their own posts and discover a wide range of articles.",
-    img: "bg-[url('/images/portfolio3.png')]",
+    img: "bg-[url('/images/portfolio4.png')]",
     technologies: ["Next.js", "Typescript", "TailwindCSS", "Supabase"],
     link: null,
     githubLink: "https://github.com/Atsuki02/AtsuBlog",
@@ -182,11 +204,11 @@ const portfolioItems = [
     bgColor3: "bg-slate-600",
   },
   {
-    index: 4,
+    index: 5,
     title: "Artist portfolio site",
     description:
       "Welcome to the portfolio website of a distinguished makeup artist, where you'll discover an exquisite collection of artistic and visually stunning photographs.",
-    img: "bg-[url('/images/portfolio4.png')]",
+    img: "bg-[url('/images/portfolio5.png')]",
     technologies: ["Astro", "Typescript", "MicroCMS", "Tailwind CSS"],
     link: "https://koseikitada.com/",
     githubLink: "https://github.com/Atsuki02/Kosei-s-portfolio",
@@ -198,11 +220,11 @@ const portfolioItems = [
     bgColor3: "bg-zinc-600",
   },
   {
-    index: 5,
+    index: 6,
     title: "Tetris",
     description:
       "Experience classic Tetris fun with my addictive app! Arrange falling blocks, clear lines, and aim for high scores in this timeless puzzle challenge.",
-    img: "bg-[url('/images/portfolio5.png')]",
+    img: "bg-[url('/images/portfolio6.png')]",
     technologies: ["HTML", "CSS", "Javascript", "Bootstrap"],
     link: "https://teamdev-a-red.github.io/work-space-tetris/",
     githubLink: "https://github.com/teamdev-A-Red/work-space-tetris",
@@ -214,11 +236,11 @@ const portfolioItems = [
     bgColor3: "bg-sky-600",
   },
   {
-    index: 6,
+    index: 7,
     title: "File Directory System",
     description:
       "Explore a user-friendly File Directory System, where commands empower you to navigate, create, and manage your virtual world effortlessly!",
-    img: "bg-[url('/images/portfolio6.png')]",
+    img: "bg-[url('/images/portfolio7.png')]",
     technologies: ["HTML", "CSS", "Typescript"],
     link: "https://filedirectorysys.netlify.app/",
     githubLink: "https://github.com/Atsuki02/File-Directory-System",
@@ -230,11 +252,11 @@ const portfolioItems = [
     bgColor3: "bg-emerald-600",
   },
   {
-    index: 7,
+    index: 8,
     title: "Clicker Empire Game",
     description:
       "This is a game where you can accumulate wealth by taking on various jobs, making investments, and investing in real estate, among other activities. The goal of the game is to amass wealth and establish a prosperous empire within the city.",
-    img: "bg-[url('/images/portfolio7.png')]",
+    img: "bg-[url('/images/portfolio8.png')]",
     technologies: ["HTML", "CSS", "Javascript"],
     link: "https://clicker-empire-game.netlify.app/",
     githubLink: "https://github.com/Atsuki02/Clicker-Empire-Game",
@@ -245,13 +267,12 @@ const portfolioItems = [
     borderColor2: "border-amber-500",
     bgColor3: "bg-amber-600",
   },
-
   {
-    index: 8,
+    index: 9,
     title: "BBQ restaurant website",
     description:
       "This website belongs to a BBQ restaurant, where we proudly present our services through enticing pictures that will tempt your taste buds and captivate your senses. ",
-    img: "bg-[url('/images/portfolio8.png')]",
+    img: "bg-[url('/images/portfolio9.png')]",
     technologies: ["HTML", "SASS", "Javascript"],
     link: "https://hokuden.verse.jp/",
     githubLink: "https://github.com/Atsuki02/Yakiniku-Hokuden-website",
