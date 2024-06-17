@@ -12,7 +12,7 @@ const SkillsSection = () => {
       viewport={{ once: true }}
       className='relative py-12 lg:py-14'
     >
-      <Title messege='Check' title='My Skills' />
+      <Title message='Check' title='My Skills' />
       <ul className='col-auto gap-3 py-10 text-center text-base leading-normal  lg:gap-14 lg:rounded-3xl lg:bg-slate-100 lg:p-10 lg:text-xl'>
         {skills.map((skill, i) => (
           <li

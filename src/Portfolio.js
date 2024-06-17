@@ -9,11 +9,6 @@ const contacts = [
     url: "https://www.linkedin.com/in/atsuki-kitada-242573271/",
     tag: "FaLinkedinIn",
   },
-  {
-    name: "instagram",
-    url: "https://www.instagram.com/atsuki_iii/",
-    tag: "FaInstagram",
-  },
 ];
 
 const skills = [
@@ -83,7 +78,7 @@ const skills = [
   },
   {
     language: "Jest",
-    icon: "/images/jest.png",
+    icon: "/images/Jest.png",
   },
   {
     language: "Prisma",
